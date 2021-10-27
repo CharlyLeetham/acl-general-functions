@@ -16,3 +16,15 @@ add_action ( 'wp_head', 'acl_scripts', 100 );
 function acl_scripts() {
     wp_enqueue_script( 'acl_match_heights', plugin_dir_url( __FILE__ ).'js/jquery.matchHeight.js','' , '0.7.2', true );
 }
+
+
+add_action('admin_head', 'acl_custom_fonts');
+
+function acl_custom_fonts() {
+  echo '<style>
+     .bb-profilebox-wrap .dashicons {
+             vertical-align: none;
+             top: 0;
+      } 
+  </style>';
+}
