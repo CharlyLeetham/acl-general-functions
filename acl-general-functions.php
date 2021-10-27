@@ -23,7 +23,7 @@ add_action('admin_head', 'acl_custom_fonts');
 function acl_custom_fonts() {
   echo '<style>
      .bb-profilebox-wrap .dashicons {
-             vertical-align: none;
+             vertical-align: top;
              top: 0;
       } 
   </style>';
